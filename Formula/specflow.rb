@@ -1,34 +1,32 @@
 class Specflow < Formula
   desc "AI project scaffolding CLI with auto-chain, review, and backlog"
   homepage "https://specflow.makerlabs.dev"
-  version "0.9.2"
+  version "0.10.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/mkrlabs/specflow/releases/download/v0.9.2/specflow-macos-arm64"
-      sha256 "a106d04700c895bb4d8a592776dd037bbcad48c6aaae1e9b6813673dd2661563"
+      url "https://github.com/mkrlabs/specflow/releases/download/v0.10.0/specflow-macos-arm64"
+      sha256 "8b393b050a378834270d163741956f9bfe0a06e9647062ab692844c89b740cd1"
     end
     on_intel do
-      url "https://github.com/mkrlabs/specflow/releases/download/v0.9.2/specflow-macos-x64"
-      sha256 "8259ea85476e14b33d84f4f4cd8ca778c608539c3e612a869e07b2bf83dbc02f"
+      url "https://github.com/mkrlabs/specflow/releases/download/v0.10.0/specflow-macos-x64"
+      sha256 "5cba2af8971250d5edb6feccf1ba76fc35071e0a9da9b5e010010503fadbdca0"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/mkrlabs/specflow/releases/download/v0.9.2/specflow-linux-arm64"
-      sha256 "ceb533354e4b35b9498a63fed40577695fd15168edf602d64cef1b7ee221676c"
+      url "https://github.com/mkrlabs/specflow/releases/download/v0.10.0/specflow-linux-arm64"
+      sha256 "2e5c9f6743cd48a796115964c94cfc3efc4a7486804d4dfead578a74b4972fd2"
     end
     on_intel do
-      url "https://github.com/mkrlabs/specflow/releases/download/v0.9.2/specflow-linux-x64"
-      sha256 "29f4c63a8f0fe21186702c7f8e27ee03800077e470d3d45da6fcaef7467848cf"
+      url "https://github.com/mkrlabs/specflow/releases/download/v0.10.0/specflow-linux-x64"
+      sha256 "b7cc983c8eaea28e65e7df073027e8a1c17134cbc5fbf0ded59690c91820c2d5"
     end
   end
 
   def install
-    # The downloaded artefact is the bare binary (no archive). Brew renames
-    # the cached file to match the URL basename — install it as `specflow`.
     bin.install Dir["specflow-*"].first => "specflow"
   end
 
