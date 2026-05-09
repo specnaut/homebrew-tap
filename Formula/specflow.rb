@@ -1,28 +1,28 @@
 class Specflow < Formula
   desc "AI project scaffolding CLI with auto-chained workflow, review, and backlog"
   homepage "https://specflow.makerlabs.dev"
-  version "1.1.7"
+  version "1.1.8"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/mkrlabs/specflow/releases/download/v1.1.7/specflow-macos-arm64"
-      sha256 "9e8daff12b614fb4578f06c3714c3a962c91df9c7ebf13ec363e2d44b214ec98"
+      url "https://github.com/mkrlabs/specflow/releases/download/v1.1.8/specflow-macos-arm64"
+      sha256 "380c69e3e9ee3e1744990deae5d14dea6549b13cea3bd11a1cf97b238c744229"
     end
     on_intel do
-      url "https://github.com/mkrlabs/specflow/releases/download/v1.1.7/specflow-macos-x64"
-      sha256 "276c351f83a4ba12157238b9bc8a5699d3c04f59ef1d3ba9c9d201015e97879c"
+      url "https://github.com/mkrlabs/specflow/releases/download/v1.1.8/specflow-macos-x64"
+      sha256 "64cbfd77da46a50def9d31acf89de8bdd767ea48c6be94aa98a416d555a54b2c"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/mkrlabs/specflow/releases/download/v1.1.7/specflow-linux-arm64"
-      sha256 "15fa258093127ffc09220f51668d9f0710b7af49732dbf56b25a5c5f1fb52935"
+      url "https://github.com/mkrlabs/specflow/releases/download/v1.1.8/specflow-linux-arm64"
+      sha256 "f2636177e08696ec758a6887612732989e6572f55063cc07f69df9775c70a7b3"
     end
     on_intel do
-      url "https://github.com/mkrlabs/specflow/releases/download/v1.1.7/specflow-linux-x64"
-      sha256 "d211da9bea956a4c3d5043da7c4606b3f4221c9235cc03938e6c331fd81ee01f"
+      url "https://github.com/mkrlabs/specflow/releases/download/v1.1.8/specflow-linux-x64"
+      sha256 "aef35a1912abbe5d64e9864d2a86c794edf673e757ed457e53a0f3d14b07bd10"
     end
   end
 
